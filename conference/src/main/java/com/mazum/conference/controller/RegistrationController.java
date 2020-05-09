@@ -19,6 +19,6 @@ public class RegistrationController {
     @PostMapping("registration")
     public String postRegistration(@ModelAttribute("registration")Registration registration) {
         System.out.println("Registration: " + registration.getName());
-        return "registration";
+        return "redirect:registration";
     }
 }
